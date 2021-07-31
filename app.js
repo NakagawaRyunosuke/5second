@@ -7,7 +7,7 @@ let startTime;
 
 let elapsedTime=0;
 
-let timerId;
+let timerId=null;
 
 let timeToadd=0;
 
@@ -46,7 +46,8 @@ const countUp=()=>{
 }
     
 start.addEventListener("click",function(){
-
+    //startを連続で押してインターバルが何個もセットされるのを回避
+    if(timerId!=null){return;}
     startTime=Date.now();
 
     countUp();
@@ -64,6 +65,7 @@ stop.addEventListener("click",function(){
     }else{
         alert("会長「失格！今、よそ見していただろ！」");
     }
+    timerId=null;
     
 });
 
