@@ -61,7 +61,7 @@ stop.addEventListener("click",function(){
         img.src="kaityou2.png";
         audio.play();
         alert("会長「おめでとう、君は私の誇りだ。」");
-        orei.innerHTML="本当にありがとう！お陰で会長の機嫌がよくなったよ(^^)<br>またやりたくなったら再読みでもしてね[F5]";
+        orei.innerHTML="本当にありがとう！お陰で会長の機嫌がよくなったよ(^^)<br>またやりたくなったら再読み込みでもしてね[F5]";
     }else{
         alert("会長「失格！今、よそ見していただろ！」");
     }
